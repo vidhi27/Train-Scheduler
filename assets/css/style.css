@@ -1,0 +1,55 @@
+body {
+    background: url("../images/background.jpg");
+}
+  
+
+.jumbotron{
+    background-image:url("../images/train1.jpg");
+    height:400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-bottom:1px solid #000066;
+    font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+    padding: 2px;
+    margin: 5px 400px 5px 400px;
+    border-style: inset;
+    border-width: 5px;
+    border-radius:10px;
+    border-color:#336699;
+    background: linear-gradient(to top left, #666699 0%, #669999 100%);
+    opacity: 0.8;
+    font-family: 'Chela One', cursive;
+}
+
+h3 {
+    padding: 5px;
+    margin: 5px 400px 5px 400px;
+    border-style: inset;
+    border-width: 5px;
+    border-radius:10px;
+    border-color:#336699;
+    background: linear-gradient(to top left, #666699 0%, #669999 100%);
+    opacity: 0.8;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.form-group {
+    color: #003366;
+    font-family: 'Oxygen', sans-serif;
+}
+ 
+th {
+    color: #003366;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.panel-heading {
+    background: linear-gradient(to bottom right, #003399 0%, #ccffff 100%);
+}
+
+#add-train-btn {
+    background: linear-gradient(to bottom right, #001a33 0%, #ccffff 100%);
+}
