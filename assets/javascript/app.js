@@ -88,15 +88,18 @@ $("#add-train-btn").on("click", function (event) {
     $("#train-info-table > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" +
         freq + "</td><td>" + nextArrival + "</td><td>" + minsAway + "</td><td>" + "<button data-name='" + trainName + "'class='btn btn-default btn-block btn-xs btn-danger'>Delete</button>" + "</td></tr>");
 
+    });
 
     // Delete function
     $(document).on("click", ".btn-danger", function () {
+        event.preventDefault()
+        console.log("test")
+        var trainKey = $(this).attr("data-name");
+        console.log(trainKey)
+        database.ref("newTrain" + trainKey).remove();
 
-        var trainKey = $(this).attr("trainName");
+        // location.reload();
 
-        database.ref("newTrain/" + trainKey).remove();
-
-        location.reload();
     });
-});
+
 
